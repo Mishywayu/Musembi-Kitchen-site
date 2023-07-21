@@ -1,0 +1,51 @@
+<%- include('./layout/Header') %>
+    <div class="contact-container">
+        <div class="header">
+            <nav>
+                <img src="./images/logo.png" alt="Logo" id="logo" />
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="contact-body">
+            <div class="overlay-left">
+                <h1>Contact</h1>
+                <p>michellewayua89@gmail.com
+                    <br />
+                    (+254)72325100
+                    <br />
+                    Nairobi, Kenya
+                </p>
+            </div>
+            <div class="overlay-right">
+                <div class="service">
+                    <h3>LUNCH SERVICE</h3>
+                    <p>Friday to Sunday 12.00pm - 2.30pm</p>
+
+                    <h3>DINNER SERVICE</h3>
+                    <p>
+                        From Wednesday to Sunday
+                        <br />
+                        6.00pm - 9.30pm
+                    </p>
+                </div>
+                <div class="wrapper" onclick="error()">
+                    <a href=""><span>Book a table!</span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function error() {
+            alert("We apologize for the inconvenience, but we're performing some maitenance. You can still contact us at michellewayua89@gmail.com. We'll be back up soon!");
+        }
+    </script>
+
+    <%- include('./layout/Footer') %>

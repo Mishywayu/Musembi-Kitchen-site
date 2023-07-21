@@ -1,0 +1,38 @@
+<%- include('./layout/Header') %>
+
+    <div class="container">
+        <div class="book-content">
+            <div class="overlay">
+                <h1>Book a Table!</h1>
+                <form action="/book-table" method="post">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" name="phone" />
+                    </div>
+                    <div class="form-group">
+                        <label for="meal">What meal are you having?</label>
+                        <input type="text" class="form-control" id="meal" name="meal" />
+                    </div>
+                    <div class="form-group">
+                        <label for="persons">Table for?</label>
+                        <input type="text" class="form-control" id="persons" name="persons" />
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Which Date?</label>
+                        <input type="date" class="form-control" id="date" name="date" />
+                    </div>
+
+                    <input type="submit" value="Book" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include('./layout/Footer') %>
